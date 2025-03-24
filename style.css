@@ -132,7 +132,7 @@ body {
   max-width: 180px;
   border-radius: 50%;
   border: .25rem solid var(--accent-color);
-  margin-bottom: .8rem;
+  margin-bottom: .6rem;
 }
 
 .profile-page h1 {
@@ -177,7 +177,7 @@ body {
 }
 
 .profile-page .btn-box {
-  margin-top: 1rem;
+  margin-top: .8rem;
 }
 
 .btn {
