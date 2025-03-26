@@ -31,7 +31,10 @@ body {
   min-height: 100vh;
   background: var(--bg-color);
   color: var(--text-color);
-  overflow: hidden;
+}
+
+.screen-size-disclaimer {
+  display: none;
 }
 
 .wrapper {
@@ -132,7 +135,7 @@ body {
   max-width: 180px;
   border-radius: 50%;
   border: .25rem solid var(--accent-color);
-  margin-bottom: .8rem;
+  margin-bottom: .6rem;
 }
 
 .profile-page h1 {
@@ -173,11 +176,11 @@ body {
 
 .profile-page p {
   text-align: justify;
-  font-size: .8rem;
+  font-size: .75rem;
 }
 
 .profile-page .btn-box {
-  margin-top: 1.2rem;
+  margin-top: .6rem;
 }
 
 .btn {
@@ -423,7 +426,7 @@ body {
   flex-direction: column;
   gap: .5rem;
 }
-
+/* padding? */
 .portfolio-item {
   display: flex;
   border: var(--border);
@@ -550,10 +553,14 @@ body {
   top: -1.8rem;
 }
 
-@media (max-width: 1000px) and (min-width: 901px) {
-
+@media (max-width: 1024px) and (min-width: 901px) {
+  
+  body {
+    align-items: start;
+    height: 1000px;
+  }
+  /* profile page */
   .profile-page img {
-    max-width: 180px;
     margin-bottom: 1.5rem;
   }
 
@@ -569,7 +576,7 @@ body {
   }
 
   .profile-page p {
-    font-size: .64rem;
+    font-size: .7rem;
   }
 
   .profile-page .btn-box {
@@ -584,10 +591,79 @@ body {
     font-weight: 500;
     margin: 0 1rem;
   }
+  /* Work & Educ pages */
+  .workeduc-box .workeduc-content {
+    padding-left: 1.6rem;
+    margin-bottom: .5rem;
+  }
+
+  .workeduc-content .year {
+    font-size: 1rem;
+  }
+
+  .workeduc-content h3 {
+    font-size: 1rem;
+  }
+
+  .workeduc-content p,
+  .workeduc-content ul {
+  font-size: .75rem;
+  }
+  /* Leadership/Services page */
+  .services-box .services-content {
+    padding: .45rem;
+  }
+
+  .services-content .title-container h3 {
+    font-size: .84rem;
+  }
+
+  .services-content .description-container p {
+    font-size: .6rem;
+    line-height: 1.3;
+  }
+  /* Activities/Portfolio page */
+  .portfolio-box {
+    gap: .5rem;
+  }
+
+  .portfolio-box .info-item {
+    padding: .2rem;
+  }
+
+  .portfolio-box .info-item .info-title {
+    justify-content: center;
+  }
+
+  .portfolio-box .info-item .info-title h3 {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .portfolio-box .info-item p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: .6rem;
+    text-align: justify;
+    line-height: 1.3;
+  }
+  /* Contact Me page */
+  .contact-box .btn {
+    width: 8rem;
+    height: 3rem;
+  }
+  /* OTS Emblem */
+  .cover.cover-right .cover-container img {
+    margin-top: 15%;
+  }
 }
 
 @media (max-width: 900px) and (min-width: 801px) {
-
+  /* good */
+  body {
+    align-items: start;
+    height: 1000px;
+  }
+  /* profile page */
   .profile-page img {
     max-width: 170px;
     margin-bottom: 1.5rem;
@@ -620,11 +696,106 @@ body {
     font-weight: 500;
     margin: 0 1rem;
   }
+  /*---- Applies to all pages ------*/
+  .title {
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  /* Work & Educ pages */
+  .workeduc-box .workeduc-content {
+    padding-left: 1.6rem;
+    margin-bottom: .5rem;
+  }
+
+  .workeduc-content .year {
+    font-size: 1rem;
+  }
+
+  .workeduc-content h3 {
+    font-size: 1rem;
+  }
+
+  .workeduc-content p,
+  .workeduc-content ul {
+  font-size: .65rem;
+  }
+  /* Leadership/Services page */
+  .services-box .services-content {
+    padding: .5rem;
+  }
+
+  .services-content .title-container h3 {
+    font-size: .84rem;
+  }
+
+  .services-content .description-container p {
+    font-size: .55rem;
+    line-height: 1.3;
+  }
+  /* Skills page */
+  .skills-content h3 {
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-bottom: .6rem;
+  }
+
+  .skills-content .content {
+    gap: .5rem;
+  }  
+
+  .skills-content .content span {
+    width: 5.5rem;
+    height: 4.5rem;
+  }
+
+  .skills-content .content span i {
+    font-size: 2rem;
+  }
+  /* Activities/Portfolio page */
+  .portfolio-box {
+    gap: .5rem;
+  }
+
+  .portfolio-box .info-item {
+    padding: .2rem;
+  }
+
+  .portfolio-box .info-item .info-title {
+    justify-content: center;
+  }
+
+  .portfolio-box .info-item .info-title h3 {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .portfolio-box .info-item p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: .6rem;
+    text-align: justify;
+    line-height: 1.3;
+  }
+  /* Contact Me page */
+  .contact-box .btn {
+    width: 8rem;
+    height: 3rem;
+  }
+  /* OTS Emblem */
+  .cover.cover-right .cover-container img {
+    margin-top: 20%;
+  }
 }
 
 
 @media (max-width: 800px) and (min-width: 701px) {
+  body {
+    align-items: start;
+    height: 1000px;
+  }
 
+  /* profile page */
   .profile-page img {
     max-width: 170px;
     margin-bottom: 1.5rem;
@@ -657,13 +828,109 @@ body {
     font-weight: 500;
     margin: 0 1rem;
   }
+  /*---- Applies to all pages ------*/
+  .title {
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  /* Work & Educ pages */
+  .workeduc-box .workeduc-content {
+    padding-left: 1.6rem;
+    margin-bottom: .5rem;
+  }
+
+  .workeduc-content .year {
+    font-size: .8rem;
+  }
+
+  .workeduc-content h3 {
+    font-size: .8rem;
+  }
+
+  .workeduc-content p,
+  .workeduc-content ul {
+  font-size: .65rem;
+  }
+  /* Leadership/Services page */
+  .services-box .services-content {
+    padding: .2rem;
+  }
+
+  .services-content .title-container h3 {
+    font-size: .8rem;
+    line-height: 1;
+  }
+
+  .services-content .description-container p {
+    font-size: .6rem;
+    line-height: 1;
+  }
+  /* Skills page */
+  .skills-content h3 {
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-bottom: .6rem;
+  }
+
+  .skills-content .content {
+    gap: .2rem;
+  }  
+
+  .skills-content .content span {
+    width: 5.5rem;
+    height: 4.5rem;
+  }
+
+  .skills-content .content span i {
+    font-size: 2rem;
+  }
+  /* Activities/Portfolio page */
+  .portfolio-box {
+    gap: .2rem;
+  }
+
+  .portfolio-box .info-item {
+    padding: .1rem;
+  }
+
+  .portfolio-box .info-item .info-title {
+    justify-content: center;
+  }
+
+  .portfolio-box .info-item .info-title h3 {
+    font-size: .8rem;
+    white-space: nowrap;
+  }
+
+  .portfolio-box .info-item p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: .6rem;
+    text-align: justify;
+    line-height: 1.2;
+  }
+  /* Contact Me page */
+  .contact-box .btn {
+    width: 6rem;
+    height: 2.5rem;
+  }
+  /* OTS Emblem */
+  .cover.cover-right .cover-container img {
+    margin-top: 35%;
+  }
 }
 
 @media (max-width: 700px) and (min-width: 601px) {
-
+  
+  body {
+    align-items: start;
+    height: 1000px;
+  }
+  /* profile page */
   .profile-page img {
     max-width: 150px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .profile-page h1 {
@@ -682,7 +949,7 @@ body {
   }
 
   .profile-page .btn-box {
-    margin-top: 1rem;
+    margin-top: .8rem;
   }
   
   .btn {
@@ -693,12 +960,105 @@ body {
     font-weight: 500;
     margin: 0 1rem;
   }
+  /*---- Applies to all pages ------*/
+  .title {
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  /* Work & Educ pages */
+  .workeduc-box .workeduc-content {
+    padding-left: 1.6rem;
+    margin-bottom: .4rem;
+  }
+
+  .workeduc-content .year {
+    font-size: .7rem;
+  }
+
+  .workeduc-content h3 {
+    font-size: .7rem;
+  }
+
+  .workeduc-content p,
+  .workeduc-content ul {
+  font-size: .6rem;
+  }
+  /* Leadership/Services page */
+  .services-box .services-content {
+    padding: .2rem;
+  }
+
+  .services-content .title-container h3 {
+    font-size: .8rem;
+    line-height: 1;
+  }
+
+  .services-content .description-container p {
+    font-size: .55rem;
+    line-height: 1;
+  }
+  /* Skills page */
+  .skills-content h3 {
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-bottom: .6rem;
+  }
+
+  .skills-content .content {
+    gap: .2rem;
+  }  
+
+  .skills-content .content span {
+    width: 5.5rem;
+    height: 4.5rem;
+  }
+
+  .skills-content .content span i {
+    font-size: 2rem;
+  }
+  /* Activities/Portfolio page */
+  .portfolio-box {
+    gap: .2rem;
+  }
+
+  .portfolio-box .img-box {
+    display: none;
+  }
+
+  .portfolio-box .info-item {
+    padding: .1rem;
+  }
+
+  .portfolio-box .info-item .info-title {
+    justify-content: center;
+  }
+
+  .portfolio-box .info-item .info-title h3 {
+    font-size: .8rem;
+    white-space: nowrap;
+  }
+
+  .portfolio-box .info-item p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: .55rem;
+    text-align: justify;
+  }
+  /* Contact Me page */
+  .contact-box .btn {
+    width: 6rem;
+    height: 2.5rem;
+  }
+  /* OTS Emblem */
+  .cover.cover-right .cover-container img {
+    margin-top: 50%;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (min-width: 572px) {
   body {
     align-items: start;
-    overflow: auto;
     height: 1000px;
   }
   /* profile page */
@@ -744,7 +1104,7 @@ body {
   .number-page {
     font-size: .8rem;
   }
-  /* wrok & Educ pages */
+  /* Work & Educ pages */
   .workeduc-box .workeduc-content {
     padding-left: 1.6rem;
     margin-bottom: .5rem;
@@ -832,5 +1192,29 @@ body {
   /* OTS Emblem */
   .cover.cover-right .cover-container img {
     margin-top: 50%;
+  }
+}
+
+@media (max-width: 571px) {
+
+  body {
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+  .screen-size-disclaimer {
+    display: contents;
+    color: var(--white-color);
+  }
+
+  .screen-size-disclaimer h1 {
+    margin-bottom: 3rem;
+  }
+
+  .screen-size-disclaimer p {
+    margin-bottom: 1rem;
+  }
+
+  .wrapper {
+    display: none;
   }
 }
