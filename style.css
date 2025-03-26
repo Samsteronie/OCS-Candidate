@@ -1204,6 +1204,7 @@ body {
   .screen-size-disclaimer {
     display: contents;
     color: var(--white-color);
+    text-align: center;
   }
 
   .screen-size-disclaimer h1 {
