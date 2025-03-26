@@ -132,11 +132,11 @@ body {
   max-width: 180px;
   border-radius: 50%;
   border: .25rem solid var(--accent-color);
-  margin-bottom: .6rem;
+  margin-bottom: .8rem;
 }
 
 .profile-page h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
@@ -177,7 +177,7 @@ body {
 }
 
 .profile-page .btn-box {
-  margin-top: .8rem;
+  margin-top: 1.2rem;
 }
 
 .btn {
@@ -358,10 +358,10 @@ body {
   font-size: 1rem;
 }
 
-.services-content .title-container p {
+/*.services-content .title-container p {
   margin-top: 0.2rem;
   font-size: .8rem;
-}
+}*/
 
 .services-content .description-container p {
   font-size: .623rem;
@@ -548,4 +548,289 @@ body {
   opacity: 1;
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
+}
+
+@media (max-width: 1000px) and (min-width: 901px) {
+
+  .profile-page img {
+    max-width: 180px;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-page h1 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    white-space: nowrap;
+  }
+
+  .profile-page h3 {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  .profile-page p {
+    font-size: .64rem;
+  }
+
+  .profile-page .btn-box {
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    width: 7rem;
+    height: 3rem;
+    border-radius: .3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 801px) {
+
+  .profile-page img {
+    max-width: 170px;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-page h1 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    white-space: nowrap;
+  }
+
+  .profile-page h3 {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  .profile-page p {
+    font-size: .64rem;
+  }
+
+  .profile-page .btn-box {
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    width: 7rem;
+    height: 3rem;
+    border-radius: .3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 1rem;
+  }
+}
+
+
+@media (max-width: 800px) and (min-width: 701px) {
+
+  .profile-page img {
+    max-width: 170px;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-page h1 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    white-space: nowrap;
+  }
+
+  .profile-page h3 {
+    font-size: .8rem;
+    margin-bottom: .5rem;
+  }
+
+  .profile-page p {
+    font-size: .62rem;
+  }
+
+  .profile-page .btn-box {
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    width: 5rem;
+    height: 2rem;
+    border-radius: .3rem;
+    font-size: .7rem;
+    font-weight: 500;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 601px) {
+
+  .profile-page img {
+    max-width: 150px;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-page h1 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    white-space: nowrap;
+  }
+
+  .profile-page h3 {
+    font-size: .8rem;
+    margin-bottom: .5rem;
+  }
+
+  .profile-page p {
+    font-size: .6rem;
+  }
+
+  .profile-page .btn-box {
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    width: 5rem;
+    height: 2rem;
+    border-radius: .3rem;
+    font-size: .7rem;
+    font-weight: 500;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    align-items: start;
+    overflow: auto;
+    height: 1000px;
+  }
+  /* profile page */
+  .profile-page img {
+    max-width: 150px;
+    margin-bottom: 2rem;
+  }
+
+  .profile-page h1 {
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    white-space: nowrap;
+  }
+
+  .profile-page h3 {
+    font-size: .7rem;
+    margin-bottom: .5rem;
+  }
+
+  .profile-page p {
+    font-size: .55rem;
+  }
+
+  .profile-page .btn-box {
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    width: 5rem;
+    height: 2rem;
+    border-radius: .3rem;
+    font-size: .7rem;
+    font-weight: 500;
+    margin: 0 1rem;
+  }
+  /*---- Applies to all pages ------*/
+  .title {
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+  }
+
+  .number-page {
+    font-size: .8rem;
+  }
+  /* wrok & Educ pages */
+  .workeduc-box .workeduc-content {
+    padding-left: 1.6rem;
+    margin-bottom: .5rem;
+  }
+
+  .workeduc-content .year {
+    font-size: .7rem;
+  }
+
+  .workeduc-content h3 {
+    font-size: .7rem;
+  }
+
+  .workeduc-content p,
+  .workeduc-content ul {
+  font-size: .55rem;
+  }
+  /* Leadership/Services page */
+  .services-box .services-content {
+    padding: .2rem;
+  }
+
+  .services-content .title-container i {
+    display: none;
+  }
+
+  .services-content .title-container h3 {
+    font-size: .55rem;
+  }
+
+  .services-content .description-container p {
+    font-size: .44rem;
+  }
+  /* Skills page */
+  .skills-content h3 {
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-bottom: .6rem;
+  }
+
+  .skills-content .content {
+    gap: .2rem;
+  }  
+
+  .skills-content .content span {
+    width: 5.5rem;
+    height: 4.5rem;
+  }
+
+  .skills-content .content span i {
+    font-size: 2rem;
+  }
+  /* Activities/Portfolio page */
+  .portfolio-box {
+    gap: .2rem;
+  }
+
+  .portfolio-box .img-box {
+    display: none;
+  }
+
+  .portfolio-box .info-item {
+    padding: .1rem;
+  }
+
+  .portfolio-box .info-item .info-title {
+    justify-content: center;
+  }
+
+  .portfolio-box .info-item .info-title h3 {
+    font-size: .8rem;
+    white-space: nowrap;
+  }
+
+  .portfolio-box .info-item p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: .55rem;
+    text-align: justify;
+  }
+  /* Contact Me page */
+  .contact-box .btn {
+    width: 6rem;
+    height: 2.5rem;
+  }
+  /* OTS Emblem */
+  .cover.cover-right .cover-container img {
+    margin-top: 50%;
+  }
 }
